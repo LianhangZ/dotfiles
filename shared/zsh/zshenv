@@ -1,0 +1,10 @@
+export DOTFILES="$HOME/dotfiles"
+export NVIM_LIB="$HOME/.local/share/nvim/lazy"
+export WHICHKEY="$NVIM_LIB/which-key.nvim/"
+
+PGHOME=$HOME/pgsql                      # ~/pgsql
+export PGDATA=$PGHOME/data              # ~/pgsql/data
+export PGHOST="localhost"
+export PGPORT=5432
+export LD_LIBRARY_PATH=$PGHOME/lib      # ~/pgsql/lib
+export PATH=$PGHOME/bin:$PATH           # ~/pgsql/bin

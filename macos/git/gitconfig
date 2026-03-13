@@ -1,0 +1,14 @@
+[init]
+    defaultBranch = main
+
+[pull]
+    rebase = false
+
+[core]
+    editor = nvim
+
+[include]
+    path = dotfiles/macos/git/gitconfig-main
+
+[includeIf "gitdir:~/test-lz1/"]
+    path = dotfiles/macos/git/gitconfig-test
