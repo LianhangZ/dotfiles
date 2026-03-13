@@ -1,0 +1,6 @@
+anaconda_projects
+.jupyter
+.ipynb_checkpoints
+.idea
+.virtual_documents
+.venv
