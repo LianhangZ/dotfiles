@@ -1,0 +1,22 @@
+on:
+  push:
+    paths:
+      - 'linux/**'
+      - 'shared/**'
+      - '.github/workflows/test-linux.yml'
+
+jobs:
+  test-pi:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: bootstrap
+        run: |
+          ln -s "$GITHUB_WORKSPACE" ~/dotfiles
+          bash linux/pi/bootstrap.sh
+      
+      - name: sync
+        run: |
+          bash linux/pi/sync.sh
+          

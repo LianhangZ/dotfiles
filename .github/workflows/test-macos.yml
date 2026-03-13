@@ -1,0 +1,14 @@
+on:
+  push:
+    paths:
+      - 'macos/**'
+      - 'shared/**'
+
+jobs:
+  test-macos:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          ln -s "$GITHUB_WORKSPACE" ~/dotfiles
+          bash macos/bootstrap.sh

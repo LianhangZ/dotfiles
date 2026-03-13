@@ -1,0 +1,8 @@
+export DOTFILES="$HOME/dotfiles"
+
+PGHOME=$HOME/pgsql                      # ~/pgsql
+export PGDATA=$PGHOME/data              # ~/pgsql/data
+export PGHOST="localhost"
+export PGPORT=5432
+export LD_LIBRARY_PATH=$PGHOME/lib      # ~/pgsql/lib
+export PATH=$PGHOME/bin:$PATH           # ~/pgsql/bin

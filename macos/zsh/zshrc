@@ -1,0 +1,9 @@
+source $DOTFILES/shared/zsh/zshrc
+
+alias cl='clear && printf "\e[3J"'
+alias lz='cd $LIANHANGZ'
+clone() {
+    git clone "git@github-main"
+}
+# alias ghl='gh repo list --limit 100 --json nameWithOwner,description,visibility,updatedAt --jq ".[] | [.nameWithOwner, (.description // \"-\"), .visibility, .updatedAt] | @tsv" | column -t -s $'\''\t'\'''
+alias ghl='gh repo list --limit 100 --json name,visibility --jq ".[] | [.name,.visibility] | @tsv" | column -t'
