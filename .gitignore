@@ -1,0 +1,9 @@
+anaconda_projects
+.jupyter
+.ipynb_checkpoints
+.idea
+.virtual_documents
+.venv
+.DS_Store
+*.log
+dotfiles.wiki
