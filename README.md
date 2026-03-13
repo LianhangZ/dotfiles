@@ -1,12 +1,19 @@
-# dotfiles
+# Dotfiles
 
-```
+## Install
+
+```shell
 git clone https://github.com/LianhangZ/dotfiles.git ~/dotfiles
 ```
 
-Then in `~/dotfiles`, run:
+### MacOS
 
-```shell
-chmod +x *.sh
-./bootstrap.sh
+```
+bash ~/dotfiles/macos/bootstrap.sh
+```
+
+### Raspberry Pi
+
+```
+bash ~/dotfiles/linux/pi/bootstrap.sh
 ```

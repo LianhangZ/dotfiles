@@ -1,0 +1,29 @@
+Host github-main
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/github_main
+    IdentitiesOnly yes
+
+Host github-test1
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/github_test1
+    IdentitiesOnly yes
+
+Host ubuntu
+    HostName 10.211.55.10
+    User parallels
+    IdentityFile ~/.ssh/id_ed25519
+    IdentitiesOnly yes
+
+Host pi
+    HostName ***.***.***.***
+    User lianhangzhang
+    IdentityFile ~/.ssh/id_ed25519
+    IdentitiesOnly yes
+
+Host vm
+    HostName ***.***.***.***
+    User root
+    IdentityFile ~/.ssh/vm
+    IdentitiesOnly yes
