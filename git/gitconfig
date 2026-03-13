@@ -1,0 +1,16 @@
+[init]
+    defaultBranch = main
+
+[pull]
+    rebase = false
+
+[core]
+    editor = nvim
+
+[include]
+    # path = ~/.gitconfig-main
+    path = ~/dotfiles/git/gitconfig-main
+
+[includeIf "gitdir:~/test-lz1/"]
+    # path = ~/.gitconfig-test1
+    path = ~/dotfiles/git/gitconfig-test
