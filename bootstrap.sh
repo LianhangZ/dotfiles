@@ -28,7 +28,9 @@ printf "installing python-setuptools..."
 brew install python-setuptools >> install_setuptools.log 2>&1
 printf "completed\n"
 
-RUNZSH=no CHSH=no sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+printf "installing ohmyzsh..."
+RUNZSH=no CHSH=no sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" >> install_ohmyzsh.log 2>&1
+printf "completed\n"
 printf "installing powerlevel10k..."
 git clone https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k >> install_powerlevel10k.log 2>&1 || true
 printf "completed\n"
