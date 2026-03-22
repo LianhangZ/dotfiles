@@ -37,7 +37,7 @@ printf "installing syntax-highlighting..."
 git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting >> install_syntax-highlighting.log 2>&1 || true
 printf "completed\n"
 
-echo "starting link..."
+printf "starting link..."
 rm ~/.zshrc
 mkdir -p ~/.config
 ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc
@@ -45,3 +45,4 @@ ln -s ~/dotfiles/zsh/.p10k.zsh ~/.p10k.zsh
 ln -s ~/dotfiles/nvim/.config/nvim ~/.config/nvim
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "$HOME/dotfiles/iterm"
 defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
+printf "completed\n"
