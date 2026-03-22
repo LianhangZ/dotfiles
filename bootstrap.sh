@@ -29,7 +29,9 @@ brew install python-setuptools >> install_setuptools.log 2>&1
 printf "completed\n"
 
 RUNZSH=no CHSH=no sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-git clone https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k
+printf "installing powerlevel10k..."
+git clone https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k >> install_powerlevel10k.log 2>&1 || true
+printf "completed\n"
 printf "installing autosuggestions..."
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions >> install_autosuggestions.log 2>&1 || true
 printf "completed\n"
