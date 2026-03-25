@@ -49,9 +49,8 @@ install_and_log_allow_fail "autosuggestions" "install_autosuggestions.log" git c
 install_and_log_allow_fail "syntax-highlighting" "install_syntax-highlighting.log" git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
 printf "starting link..."
-rm ~/.zshrc
 mkdir -p ~/.config
-ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc
+ln -sf ~/dotfiles/zsh/.zshrc ~/.zshrc
 ln -s ~/dotfiles/zsh/.p10k.zsh ~/.p10k.zsh
 ln -s ~/dotfiles/nvim/.config/nvim ~/.config/nvim
 ln -sf ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
