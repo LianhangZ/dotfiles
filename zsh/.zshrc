@@ -17,3 +17,5 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 [ -f ~/dotfiles/postgres/env.sh ] && source ~/dotfiles/postgres/env.sh
+
+source ~/dotfiles/shell/git.zsh
