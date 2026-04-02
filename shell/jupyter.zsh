@@ -12,3 +12,7 @@ delete_venv() {
     rm -rf .venv
     # TO-DO: delete ~/Library/Jupyter/env-name
 }
+
+show_venv() {
+    ls ~/Library/Jupyter/kernels
+}
