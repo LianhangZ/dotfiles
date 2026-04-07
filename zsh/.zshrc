@@ -20,3 +20,13 @@ source $ZSH/oh-my-zsh.sh
 
 source ~/dotfiles/shell/git.zsh
 source ~/dotfiles/shell/jupyter.zsh
+
+show_command() {
+  which status
+  which stash
+  which pop
+  which init_venv
+  which delete_venv
+  which deregister_venv
+  which show_venv
+}
