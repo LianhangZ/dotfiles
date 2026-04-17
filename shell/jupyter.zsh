@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+JUPYTER_KERNELS="$HOME/Library/Jupyter/kernels/"
+
 init_venv() {
     python3 -m venv .venv || return 1
     source .venv/bin/activate || return 1
@@ -14,18 +16,21 @@ delete_venv() {
 }
 
 deregister_venv() {
-    local base_dir="$HOME/Library/Jupyter/kernels/"
+    # local base_dir="$HOME/Library/Jupyter/kernels/"
     if [[ -z "$1" ]]; then
-        cd "$base_dir" || return 1
+        # cd "$base_dir" || return 1
+        cd "$JUPYTER_KERNELS" || return 1
     else
         # cd "$base_dir/$1" || return 1
-        rm -rf "$base_dir/$1" || return 1   # ~/Library/Jupyter
+        # rm -rf "$base_dir/$1" || return 1   # ~/Library/Jupyter
+        rm -rf "$JUPYTER_KERNELS/$1" || return 1   # ~/Library/Jupyter
     fi
     # echo "deregister"
 }
 
 _deregister-venv_completion() {
-  _files -W "$HOME/Library/Jupyter/kernels/" -/
+#   _files -W "$HOME/Library/Jupyter/kernels/" -/
+    _files -W "$JUPYTER_KERNELS" -/
 }
 
 compdef _deregister-venv_completion deregister_venv
