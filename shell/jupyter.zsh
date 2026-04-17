@@ -36,5 +36,11 @@ _deregister-venv_completion() {
 compdef _deregister-venv_completion deregister_venv
 
 show_venv() {
-    ls ~/Library/Jupyter/kernels
+    for d in "$JUPYTER_KERNELS"/*; do
+        if [[ -f "$d"/kernel.json ]]; then
+            kernel_name=$(basename "$d")
+            kernel_path=$(grep -m1 '"argv"' -A 1 "$d/kernel.json" | tail -n1 | sed 's/[", ]//g')
+            echo "$kernel_name -> $kernel_path"
+        fi
+    done
 }
