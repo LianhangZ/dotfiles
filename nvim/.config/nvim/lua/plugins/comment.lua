@@ -5,7 +5,7 @@ return {
     opts = {},
   },
   {
-    "echasnovski/mini.comment",
+    "nvim-mini/mini.comment",
     opts = {},
     keys = {
       { "gcc", mode = "n", desc = "Comment line" },
