@@ -5,6 +5,8 @@ fi
 DOWNLOADS="$HOME/Downloads"
 DOTFILES="$HOME/dotfiles"
 LIANHANGZ="$HOME/LianhangZ"
+ICLOUD="$HOME/Library/Mobile Documents/com~apple~CloudDocs"
+OBSIDIAN="$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents"
 export PATH=/opt/homebrew/bin:$PATH
 export OH_MY_ZSH="$HOME/.oh-my-zsh"
 export P10K="$HOME/.p10k.zsh"
