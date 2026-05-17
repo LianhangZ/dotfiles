@@ -1,2 +1,4 @@
 source $DOTFILES/shared/zsh/zshrc
-source $DOTFILES/macos/shell/aliases.sh
+# source $DOTFILES/macos/shell/aliases.sh
+
+alias cl='clear && printf "\e[3J"'

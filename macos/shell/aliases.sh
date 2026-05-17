@@ -1,1 +1,1 @@
-alias cl='clear && printf "\e[3J"'
+# alias cl='clear && printf "\e[3J"'
