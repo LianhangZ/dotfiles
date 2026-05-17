@@ -4,7 +4,7 @@ ln -sf ~/dotfiles/macos/zsh/zshrc ~/.zshrc
 ln -sf ~/dotfiles/macos/zsh/zshenv ~/.zshenv
 
 unlink ~/.p10k.zsh
-ln -sf ~/dotfiles/zsh/p10k.zsh ~/.p10k.zsh
+ln -sf ~/dotfiles/macos/zsh/p10k.zsh ~/.p10k.zsh
 unlink ~/.tmux.conf
 ln -sf ~/dotfiles/shared/tmux/tmux.conf ~/.tmux.conf
 
