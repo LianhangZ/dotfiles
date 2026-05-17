@@ -9,7 +9,8 @@ unlink ~/.tmux.conf
 ln -sf ~/dotfiles/shared/tmux/tmux.conf ~/.tmux.conf
 
 unlink ~/.gitconfig
-ln -sf ~/dotfiles/git/gitconfig ~/.gitconfig
+ln -sf ~/dotfiles/macos/git/gitconfig ~/.gitconfig
+# ln -sf ~/dotfiles/git/gitconfig ~/.gitconfig
 # ln -sf ~/dotfiles/git/gitconfig-main ~/.gitconfig-main
 # ln -sf ~/dotfiles/git/gitconfig-test1 ~/.gitconfig-test1
 

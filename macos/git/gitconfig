@@ -9,8 +9,8 @@
 
 [include]
     # path = ~/.gitconfig-main
-    path = ~/dotfiles/git/gitconfig-main
+    path = ~/dotfiles/macos/git/gitconfig-main
 
 [includeIf "gitdir:~/test-lz1/"]
     # path = ~/.gitconfig-test1
-    path = ~/dotfiles/git/gitconfig-test
+    path = ~/dotfiles/macos/git/gitconfig-test
