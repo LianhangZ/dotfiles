@@ -1,6 +1,6 @@
 UNEXISTED="$HOME/sidfhoiho"
 
-export PATH=/opt/homebrew/bin:$PATH
+# DOWNLOADS="$HOME/Downloads"
 
 export DOTFILES="$HOME/dotfiles"
 

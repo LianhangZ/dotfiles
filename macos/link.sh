@@ -1,7 +1,7 @@
 unlink ~/.zshrc
 unlink ~/.zshenv
-ln -sf ~/dotfiles/zsh/zshrc ~/.zshrc
-ln -sf ~/dotfiles/zsh/zshenv ~/.zshenv
+ln -sf ~/dotfiles/macos/zsh/zshrc ~/.zshrc
+ln -sf ~/dotfiles/macos/zsh/zshenv ~/.zshenv
 
 unlink ~/.p10k.zsh
 ln -sf ~/dotfiles/zsh/p10k.zsh ~/.p10k.zsh
