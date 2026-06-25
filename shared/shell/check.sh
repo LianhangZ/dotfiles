@@ -17,21 +17,10 @@ check_link() {
   fi
 }
 
-check_nvim() {
-  command -v nvim
-}
-
-check_lazygit() {
-  command -v lazygit
-}
-
-check_rg() {
-  command -v rg
-}
-
-check_docker() {
-  command -v docker
-}
+check_nvim() { command -v nvim; }
+check_lazygit() { command -v lazygit; }
+check_rg() { command -v rg; }
+check_docker() { command -v docker; }
 
 check_ohmyzsh() {
   [ -d "$HOME/.oh-my-zsh" ]

@@ -11,8 +11,8 @@ rm -f ~/.config/nvim/stylua.toml
 rm -f ~/.config/nvim/lazy-lock.json
 
 SHARED_NVIM="$HOME/dotfiles/shared/nvim"
-ln -sf "$SHARED_NVIM/lua"                       ~/.config/nvim/lua
-ln -sf "$SHARED_NVIM/.neoconf.json"             ~/.config/nvim/.neoconf.json
-ln -sf "$SHARED_NVIM/init.lua"                  ~/.config/nvim/init.lua
-ln -sf "$SHARED_NVIM/lazyvim.json"              ~/.config/nvim/lazyvim.json
-ln -sf "$SHARED_NVIM/stylua.toml"               ~/.config/nvim/stylua.toml
+ln -sf "$SHARED_NVIM/lua"             ~/.config/nvim/lua
+ln -sf "$SHARED_NVIM/.neoconf.json"   ~/.config/nvim/.neoconf.json
+ln -sf "$SHARED_NVIM/init.lua"        ~/.config/nvim/init.lua
+ln -sf "$SHARED_NVIM/lazyvim.json"    ~/.config/nvim/lazyvim.json
+ln -sf "$SHARED_NVIM/stylua.toml"     ~/.config/nvim/stylua.toml
