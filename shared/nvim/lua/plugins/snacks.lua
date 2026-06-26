@@ -14,6 +14,9 @@ return {
     { "<leader>ff", false },
     { "<leader>fg", false },
     { "<leader><leader>", false },
+    -- { "<leader>fp", false },
+    { "<leader>p", function () Snacks.picker.projects() end,
+      desc = "󰙅 Projects"},
   },
   opts = {
     terminal = {

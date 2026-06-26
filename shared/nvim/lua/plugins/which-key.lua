@@ -14,7 +14,7 @@
 -- icon: 󰈔 󰉋 󰙅; 󰊢 󰘬;  ; 󰍉 󰱼; 󱞁 󰃤 󰨞;  󰅖; 󰩹  󰉖 󰆴 󰗨; 󰏫  󰷹 󰑕 󱍸; 󰐕 󰐗 󰝒
 
 local keymaps = {
-  ["f"] = true,
+  -- ["f"] = true,
   ["G"] = true,     -- last line
   ["H"] = true,     -- move left
   ["L"] = true,     -- move right
@@ -22,6 +22,7 @@ local keymaps = {
   [" bo"] = true,   -- delete other buffers
   [" d"] = true,    -- delete buffer
   [" e"] = true,    -- Explorer
+  -- [" fp"] = true,   -- Project
   [" g"] = true,    -- live grep
   [" h"] = true,    -- preview hunk inline
   [" l"] = true,    -- lazygit
@@ -29,8 +30,9 @@ local keymaps = {
   [" n"] = true,    -- noise history
   -- [" nh"] = true,   -- Noise History
   [" o"] = true,    -- Outline
+  [" p"] = true,    -- Project
   -- [" f"] = true,    -- find group
-  [" hi"] = true,   -- hunk inline
+  -- [" hi"] = true,   -- hunk inline
   [" rh"] = true,   -- reset hunk
   [" rb"] = true,   -- reset buffer
   -- [" rn"] = true,   -- rename
