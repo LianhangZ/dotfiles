@@ -11,6 +11,11 @@ install_ohmyzsh() {
   RUNZSH=no CHSH=no sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 }
 
+install_p10k() {
+  git clone https://github.com/romkatv/powerlevel10k.git \
+    ~/.oh-my-zsh/custom/themes/powerlevel10k
+}
+
 install_autosuggestions() {
   git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 }

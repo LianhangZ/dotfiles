@@ -32,9 +32,7 @@ install_lazygit() {
   rm lazygit.tar.gz lazygit
 }
 
-install_zsh() {
-  sudo apt install -y zsh
-}
+install_zsh() { sudo apt install -y zsh; }
 
 install_docker() {
   curl -fsSL https://get.docker.com | sh
@@ -44,12 +42,7 @@ install_docker() {
   sudo systemctl start docker
 }
 
-install_btop() {
-  sudo apt install btop
-}
-
-install_rg() {
-  sudo apt install ripgrep
-}
+install_btop() { sudo apt install btop; }
+install_rg() { sudo apt install ripgrep; }
 
 # sudo apt install fd-find

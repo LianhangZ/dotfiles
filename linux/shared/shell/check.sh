@@ -1,18 +1,11 @@
-check_zsh() {
-  command -v zsh
-}
+check_zsh() { command -v zsh; }
 
 check_font() {
   fc-list | grep -qi "JetBrainsMono Nerd Font"
 }
 
-check_btop() {
-  command -v btop
-}
-
-check_rg() {
-  command -v rg
-}
+check_btop() { command -v btop; }
+check_rg() { command -v rg; }
 
 sudo -v
 source ~/dotfiles/shared/shell/check.sh
@@ -31,6 +24,6 @@ check_install ohmyzsh
 check_install p10k
 check_install autosuggestions
 check_install syntax-highlighting
-check_install docker
+# check_install docker
 check_install btop
 check_install rg

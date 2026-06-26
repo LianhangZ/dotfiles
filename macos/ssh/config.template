@@ -21,3 +21,9 @@ Host pi
     User lianhangzhang
     IdentityFile ~/.ssh/id_ed25519
     IdentitiesOnly yes
+
+Host vm
+    HostName ***.***.***.***
+    User root
+    IdentityFile ~/.ssh/vm
+    IdentitiesOnly yes
