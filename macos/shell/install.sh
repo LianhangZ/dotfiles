@@ -13,20 +13,20 @@ install_font() {
   brew install --cask font-meslo-lg-nerd-font
 }
 
-install_p10k() {
-  git clone https://github.com/romkatv/powerlevel10k.git \
-    ~/.oh-my-zsh/custom/themes/powerlevel10k
-}
-
-install_autosuggestions() {
-  git clone https://github.com/zsh-users/zsh-autosuggestions \
-    ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-}
-
-install_syntax-highlighting() {
-  git clone https://github.com/zsh-users/zsh-syntax-highlighting \
-    ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-}
+# install_p10k() {
+#   git clone https://github.com/romkatv/powerlevel10k.git \
+#     ~/.oh-my-zsh/custom/themes/powerlevel10k
+# }
+#
+# install_autosuggestions() {
+#   git clone https://github.com/zsh-users/zsh-autosuggestions \
+#     ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+# }
+#
+# install_syntax-highlighting() {
+#   git clone https://github.com/zsh-users/zsh-syntax-highlighting \
+#     ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+# }
 
 install_lazygit() { brew install lazygit; }
 install_nvim() { brew install neovim; }
