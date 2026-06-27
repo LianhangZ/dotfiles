@@ -5,6 +5,7 @@ alias cl='clear'
 alias lz='cd $LIANHANGZ'
 alias ob='cd $OBSIDIAN'
 alias pi='ssh pi'
+alias vm='ssh vm'
 
 # clone() {
 #     git clone "git@github-main"
