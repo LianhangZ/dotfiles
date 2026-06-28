@@ -31,7 +31,7 @@
 
 - 缺少分号 `syntax error near unexpected token`
 
-- 互换`fn`和`ctrl`键: Setting -> Keyboard -> Keyboard Shortcuts -> Modifier
+- 互换`fn`和`ctrl`键: Setting -> Keyboard -> Keyboard Shortcuts -> Modifier ✅
 
 # Features
 
