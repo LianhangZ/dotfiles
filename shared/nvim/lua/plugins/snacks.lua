@@ -2,19 +2,20 @@
 return {
   "folke/snacks.nvim",
   keys = {
-    { "<leader>bd", false },
+    { "<leader><leader>", false },
+    { "<leader>bd", false },  -- Delete Buffer
+    { "<leader>bo", false },  -- Delete Other Buffer
+    { "<leader>ft", false },  -- Floating Terminal
+    { "<leader>ff", false },  -- Find File
+    { "<leader>fg", false },  -- Live Grep
+    { "<leader>fF", false },
+    { "<leader>fp", false },  -- Find Projects
     { "<leader>d", function() Snacks.bufdelete() end,
       desc = " Delete Buffer"},
-    { "<leader>ft", false },
     { "<leader>t", function() Snacks.terminal() end,
       desc = " Terminal"},
     { "<leader>e", function() Snacks.explorer() end,
       desc = "󰙅 Explorer"},
-
-    { "<leader>ff", false },
-    { "<leader>fg", false },
-    { "<leader><leader>", false },
-    -- { "<leader>fp", false },
     { "<leader>p", function () Snacks.picker.projects() end,
       desc = "󰙅 Projects"},
   },

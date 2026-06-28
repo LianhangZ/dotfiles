@@ -26,6 +26,8 @@
 - Neovim ✅ `:new` `:put =execute('verbose nmap <leader>fg')`
 - Neovim ✅ `c`, ✅ `cw`, ✅ `:help c`
 - Neovim ✅ `:e!`; ✅ `:e`
+- Neovim ✅ `:Lazy reload which-key.lua`
+- Neovim ✅ `opt+j` ✅ `opt+k`
 - 打开emoji表 `ctrl+cmd+space`: ✅ `checkmark` or `tick`, ❌ `x` or `cross mark` ; 选择 ✅ `Enter+Right/Left/Up/Down`
 - Setting -> Keyboard -> ✅ Key Repeat Rate & Delay until Repeat
 
