@@ -16,13 +16,10 @@ return {
       [".github"] = { glyph = "", hl = "MiniIconsAzure" },
       [".config"] = { glyph = "", hl = "MiniIconsCyan" },
       ["config"] = { glyph = "", hl = "MiniIconsCyan" },
-      -- nvim = { glyph = "󰒓", hl = "MiniIconsAzure" },
-      -- nvim_open = { glyph = "", hl = "MiniIconsAzure" },
       ["zsh"] = { glyph = "", hl = "MiniIconsGreen" },
-      ["src"] = { glyph = "󰉋", hl = "MiniIconsPink" },
+      ["src"] = { glyph = "󰴉", hl = "MiniIconsGreen" },
       ["build"] = { glyph = "", hl = "MiniIconsGrey" },
-      ["test"] = { glyph = "󰉋", hl = "MiniIconsGrey" },
-      ["macos"] = { glyph = "󰉋", hl = "MiniIconsGrey" },
+      ["asset"] = { glyph = "󰉏", hl = "MiniIconsYellow"},
     },
 
     extension = {
