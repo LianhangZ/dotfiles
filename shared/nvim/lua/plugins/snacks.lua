@@ -37,8 +37,7 @@ return {
           },
           dev = {
             "~/LianhangZ",
-            "~/Desktop",
-            "~/Documents",
+            "~/Library/Mobile Documents/iCloud~md~obsidian/Documents"
           },
           patterns = {
             ".git",

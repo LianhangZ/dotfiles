@@ -13,9 +13,10 @@ return {
     directory = {
       [".git"] = { glyph = "", hl = "MiniIconsOrange" },
       ["git"] = { glyph = "", hl = "MiniIconsOrange" },
-      [".github"] = { glyph = "", hl = "MiniIconsAzure" },
+      [".github"] = { glyph = "", hl = "DarkGrey" },
       [".config"] = { glyph = "", hl = "MiniIconsCyan" },
       ["config"] = { glyph = "", hl = "MiniIconsCyan" },
+      ["doc"] = { glyph = "󰣞", hl = "MiniIconsBlue" },
       ["zsh"] = { glyph = "", hl = "MiniIconsGreen" },
       ["src"] = { glyph = "󰴉", hl = "MiniIconsGreen" },
       ["build"] = { glyph = "", hl = "MiniIconsGrey" },
@@ -25,8 +26,8 @@ return {
     extension = {
       c = { glyph = "", hl = "MiniIconsAzure"},
       cpp = { glyph = "", hl = "MiniIconsAzure"},
-      zsh = { glyph = "$", hl = "MiniIconsGreen" },
-      sh = { glyph = "$", hl = "MiniIconsGreen" },
+      zsh = { glyph = "", hl = "MiniIconsOrange" },
+      sh = { glyph = "", hl = "MiniIconsOrange" },
       lua = { glyph = "󰢱", hl = "MiniIconsAzure" },
       md = { glyph = "󰍔", hl = "MiniIconsYellow" },
       json = { glyph = "", hl = "MiniIconsYellow" },
@@ -34,7 +35,8 @@ return {
       ts = { glyph = "󰛦", hl = "MiniIconsAzure" },
       vue = { glyph = "󰡄", hl = "MiniIconsGreen" },
       pdf = { glyph = "", hl = "MiniIconsRed" },
-      jpg = { glyph = "󰈥", hl = "MiniIconsOrange" },
+      jpg = { glyph = "󰈟", hl = "MiniIconsOrange" },
+      jpeg = { glyph = "󰈟", hl = "MiniIconsOrange" },
       png = { glyph = "󰈟", hl = "MiniIconsOrange" },
       tar = { glyph = "󰛫", hl = "MiniIconsCyan" },
       zip = { glyph = "󰛫", hl = "MiniIconsCyan" },
@@ -50,18 +52,16 @@ return {
       ["gitconfig-test"] = { glyph = "", hl = "MiniIconsOrange" },
       ["LICENSE"] = { glyph = "󰿃", hl = "MiniIconsCyan" },
       ["CHANGELOG"] = { glyph = "󰗀", hl = "MiniIconsPurple" },
-      ["zshrc"] = { glyph = "$", hl = "MiniIconsGreen" },
-      ["zshenv"] = { glyph = "$", hl = "MiniIconsGreen" },
-      ["p10k.zsh"] = { glyph = "$", hl = "MiniIconsGreen" },
+      ["zshrc"] = { glyph = "", hl = "MiniIconsOrange" },
+      ["zshenv"] = { glyph = "", hl = "MiniIconsOrange" },
       ["README.md"] = { glyph = "󰍔", hl = "MiniIconsYellow" },
       ["init.lua"] = { glyph = "󰢱", hl = "MiniIconsAzure" },
     },
 
     filetype = {
-      zsh = { glyph = "$", hl = "MiniIconsGreen" },
-      git = { glyph = "", hl = "MiniIconsOrange" },
-      json = { glyph = "", hl = "MiniIconsYellow" },
-      lua = { glyph = "󰢱", hl = "MiniIconsAzure" },
+      -- git = { glyph = "", hl = "MiniIconsOrange" },
+      -- json = { glyph = "", hl = "MiniIconsYellow" },
+      -- lua = { glyph = "󰢱", hl = "MiniIconsAzure" },
       help = { glyph = "󰋖", hl = "MiniIconsPurple" },
     },
   },
@@ -70,5 +70,6 @@ return {
     require("mini.icons").setup(opts)
 
     require("mini.icons").mock_nvim_web_devicons()
+    vim.api.nvim_set_hl(0, "DarkGrey", {fg = "#4D4D4D",})
   end,
 }
