@@ -21,6 +21,7 @@ return {
       ["src"] = { glyph = "󰴉", hl = "MiniIconsGreen" },
       ["build"] = { glyph = "", hl = "MiniIconsGrey" },
       ["asset"] = { glyph = "󰉏", hl = "MiniIconsYellow"},
+      ["assets"] = { glyph = "󰉏", hl = "MiniIconsYellow"},
     },
 
     extension = {

@@ -1,7 +1,5 @@
 source $DOTFILES/shared/zsh/zshrc
 
-# alias cl='clear && printf "\e[3J"'
-alias cl='clear'
 alias lz='cd $LIANHANGZ'
 alias ob='cd $OBSIDIAN'
 alias pi='ssh pi'
