@@ -15,6 +15,8 @@ ln -sf ~/dotfiles/macos/nvim/lazy-lock.json \
 ln -sf ~/dotfiles/macos/wezterm.lua   ~/.wezterm.lua
 ln -sf ~/dotfiles/shared/tmux.conf    ~/.tmux.conf
 ln -sf ~/dotfiles/macos/git/gitconfig ~/.gitconfig
+ln -sf ~/dotfiles/macos/aerospace.toml ~/.aerospace.toml
+ln -sf ~/dotfiles/macos/sketchybar     ~/.config/sketchybar
 
 bash ~/dotfiles/shared/check_link.sh
 
