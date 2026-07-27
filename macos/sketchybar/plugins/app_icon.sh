@@ -2,14 +2,13 @@
 
 app_icon() {
   case "$1" in
-    "Activity Monitor") printf "󰔟" ;;
-    "AeroSpace") printf "󰀻" ;;
-    "App Store") printf "󰀻" ;;
-    "Calendar"|"Notion Calendar") printf "󰃭" ;;
-    "ChatGPT") printf "󰭹" ;;
+    "Activity Monitor") printf "󰓅" ;;
+    "AeroSpace"|"App Store") printf "󰀻" ;;
+    "Anki") printf "󰘸" ;;
+    "Calendar"|"Notion Calendar") printf "" ;;
     "Code"|"Visual Studio Code") printf "󰨞" ;;
     "Codex") printf "" ;;
-    "Discord") printf "󰙯" ;;
+    "Dictionary") printf "" ;;
     "Docker"|"Docker Desktop") printf "󰡨" ;;
     "Finder") printf "󰀶" ;;
     "Firefox") printf "󰈹" ;;
@@ -24,12 +23,19 @@ app_icon() {
     "Music") printf "󰝚" ;;
     "Notion") printf "" ;;
     "Obsidian") printf "󰠮" ;;
-    "Preview") printf "󰋩" ;;
+    "Parallels Desktop") printf "󰟀" ;;
+    "Preview") printf "" ;;
+    "Reminders") printf "" ;;
     "Safari") printf "󰀹" ;;
     "Spotify") printf "󰓇" ;;
+    "Steam Helper") printf "" ;;
     "System Settings") printf "󰒓" ;;
+    "TV") printf "" ;;
+    "Voice Memos") printf "" ;;
+    "WeChat") printf "󱋊" ;;
     "Xcode") printf "󰀵" ;;
     "zoom.us") printf "󰕧" ;;
+    "Zotero") printf "" ;;
     *) printf "󰣆" ;;
   esac
 }
