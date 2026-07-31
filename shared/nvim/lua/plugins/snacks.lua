@@ -42,7 +42,8 @@ return {
           patterns = {
             ".git",
             "Makefile",
-            "CMakeLists.txt"
+            "CMakeLists.txt",
+            "README.md",
           },
         },
         files = {
