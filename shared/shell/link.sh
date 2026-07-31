@@ -16,3 +16,5 @@ ln -sf "$SHARED_NVIM/.neoconf.json"   ~/.config/nvim/.neoconf.json
 ln -sf "$SHARED_NVIM/init.lua"        ~/.config/nvim/init.lua
 ln -sf "$SHARED_NVIM/lazyvim.json"    ~/.config/nvim/lazyvim.json
 ln -sf "$SHARED_NVIM/stylua.toml"     ~/.config/nvim/stylua.toml
+
+ln -sf ~/dotfiles/shared/gitconfig ~/.gitconfig
