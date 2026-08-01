@@ -39,8 +39,30 @@ local function transparent()
   end
 end
 
+local function bold_window_separator()
+  vim.opt.fillchars:append({
+    horiz = "━",
+    horizdown = "┳",
+    horizup = "┻",
+    vert = "┃",
+    vertleft = "┫",
+    vertright = "┣",
+    verthoriz = "╋",
+  })
+
+  vim.api.nvim_set_hl(0, "WinSeparator", {
+    fg = "#ff9e64",
+    bg = "NONE",
+    bold = true,
+  })
+end
+
 vim.api.nvim_create_autocmd("ColorScheme", {
-  callback = transparent,
+  callback = function()
+    transparent()
+    bold_window_separator()
+  end,
 })
 
 transparent()
+bold_window_separator()
