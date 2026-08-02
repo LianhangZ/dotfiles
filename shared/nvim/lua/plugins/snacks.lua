@@ -12,8 +12,14 @@ return {
     { "<leader>fp", false },  -- Find Projects
     { "<leader>d", function() Snacks.bufdelete() end,
       desc = " Delete Buffer"},
-    { "<leader>t", function() Snacks.terminal() end,
-      desc = " Terminal"},
+    { "<leader>tb",
+      function() Snacks.terminal(nil, {win = {position = "bottom", height = 0.35,}}) end,
+      desc = " Bottom Terminal"
+    },
+    { "<leader>tr",
+      function() Snacks.terminal(nil, {win = {position = "right", width = 0.26,}}) end,
+      desc = " Right Terminal"
+    },
     { "<leader>e", function() Snacks.explorer() end,
       desc = "󰙅 Explorer"},
     { "<leader>p", function () Snacks.picker.projects() end,
