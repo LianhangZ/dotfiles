@@ -28,6 +28,7 @@ app_icon() {
     "Reminders") printf "" ;;
     "Safari") printf "󰀹" ;;
     "Spotify") printf "󰓇" ;;
+    "Steam Helper") printf "" ;;
     "System Settings") printf "󰒓" ;;
     "TV") printf "" ;;
     "Voice Memos") printf "" ;;
