@@ -1,15 +1,15 @@
 return {
   "nvim-telescope/telescope.nvim",
   keys = {
-    { "<leader>ff", false },
-    { "<leader>fg", false },
+    { "<leader>ff", false }, -- Find File (Root Dir)
+    { "<leader>fg", false }, -- Live Grep
     { "<leader><leader>", function()
         require("telescope.builtin").find_files()
       end, desc = "󰍉 Find File"
     }, -- Find File (Root Dir)
     { "<leader>g", function()
         require("telescope.builtin").live_grep()
-      end, desc = "󰍉 Live Grep"
+      end, desc = "󰍉 Grep"
     }, -- Live Grep
   },
   opts = function(_, opts)
