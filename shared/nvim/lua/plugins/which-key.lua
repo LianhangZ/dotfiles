@@ -56,15 +56,6 @@ local keymaps = {
   -- ["="] = true,
 }
 
-local snacks_explorer_keymaps = {
-  ["a"] = true,
-  ["d"] = true,
-  ["h"] = true,
-  ["H"] = true,
-  ["r"] = true,
-  ["?"] = true,
-}
-
 return {
   "folke/which-key.nvim",
   opts = {
@@ -76,10 +67,6 @@ return {
     --   { "<leader>f", group = "󰍉 Find" },
     -- },
     filter = function(mapping)
-      if vim.bo.filetype == "snacks_picker_list" then
-        return snacks_explorer_keymaps[mapping.lhs] == true
-      end
-
       -- if mapping.group then
       --   return true
       -- end

@@ -5,6 +5,7 @@ return {
     { "<leader><leader>", false },
     { "<leader>bd", false },  -- Delete Buffer
     { "<leader>bo", false },  -- Delete Other Buffer
+    { "<leader>e", false },
     { "<leader>ft", false },  -- Floating Terminal
     { "<leader>ff", false },  -- Find File
     { "<leader>fg", false },  -- Live Grep
@@ -20,8 +21,6 @@ return {
       function() Snacks.terminal(nil, {win = {position = "right", width = 0.26,}}) end,
       desc = " Right Terminal"
     },
-    { "<leader>e", function() Snacks.explorer() end,
-      desc = "󰙅 Explorer"},
     { "<leader>p", function () Snacks.picker.projects() end,
       desc = "󰙅 Projects"},
   },
@@ -33,7 +32,7 @@ return {
       },
     },
     explorer = {
-      enabled = true,
+      enabled = false,
     },
     picker = {
       sources = {
@@ -65,50 +64,6 @@ return {
             preview = true,
           },
         },
-        explorer = {
-          hidden = true,
-          follow_file = true,
-          layout = {
-            preset = "sidebar",
-            preview = false,
-            layout = {
-              width = 0.26,
-            },
-          },
-          win = {
-            list = {
-              keys = {
-                ["a"] = {
-                  "explorer_add", mode = "n",
-                  desc = "󰝒 Add File/Dir",
-                },
-                ["d"] = {
-                  "explorer_del", mode = "n",
-                  desc = " Delete File/Dir",
-                },
-                ["h"] = {
-                  "explorer_close", mode = "n",
-                  desc = " Collapse Folder"
-                },
-                ["H"] = {
-                  "toggle_hidden", mode = "n",
-                  desc = "󰈈 Hide Dot Files"
-                },
-                ["r"] = {
-                  "explorer_rename", mode = "n",
-                  desc = "󰏫 Rename File/Dir",
-                },
-                ["?"] = {
-                  function()
-                    require("which-key").show({ global = false })
-                  end,
-                  mode = "n",
-                  desc = " Show Explorer Keymaps",
-                },
-              },
-            },
-          },
-        }
       }
     }
   },
