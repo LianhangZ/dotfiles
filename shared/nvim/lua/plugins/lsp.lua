@@ -3,15 +3,9 @@ return {
     "neovim/nvim-lspconfig",
     ---@class PluginLspOpts
     opts = {
-      ---@type lspconfig.options
       servers = {
-        -- Python
-        pyright = {},
-
-        -- C/C++
-        clangd = {},
-
-        -- Lua
+        pyright = {}, -- Python
+        clangd = {}, -- C/C++
         lua_ls = {
           settings = {
             Lua = {
@@ -20,7 +14,7 @@ return {
               },
             },
           },
-        },
+        }, -- Lua
       },
     },
   },
