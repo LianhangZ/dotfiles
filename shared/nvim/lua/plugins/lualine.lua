@@ -28,7 +28,7 @@ return {
       end
 
       opts.options = vim.tbl_deep_extend("force", opts.options or {}, {
-        theme = "catppuccin",
+        theme = "auto",
         globalstatus = true,
         component_separators = { left = "", right = "" },
         section_separators = { left = "", right = "" },
