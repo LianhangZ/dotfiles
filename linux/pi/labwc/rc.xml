@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<openbox_config xmlns="http://openbox.org/3.4/rc">
+  <libinput>
+    <device category="default">
+      <pointerSpeed>-0.800000</pointerSpeed>
+    </device>
+  </libinput>
+  <theme>
+    <font place="ActiveWindow">
+      <name>Nunito Sans</name>
+      <size>12</size>
+      <weight>Light</weight>
+      <slant>Normal</slant>
+    </font>
+    <font place="InactiveWindow">
+      <name>Nunito Sans</name>
+      <size>12</size>
+      <weight>Light</weight>
+      <slant>Normal</slant>
+    </font>
+    <name>PiXonyx</name>
+  </theme>
+  <desktops><number>4</number></desktops>
+  <keyboard>
+    <keybind key="A-1"><action name="GoToDesktop" to="1"/></keybind>
+    <keybind key="A-2"><action name="GoToDesktop" to="2"/></keybind>
+    <keybind key="A-3"><action name="GoToDesktop" to="3"/></keybind>
+    <keybind key="A-4"><action name="GoToDesktop" to="4"/></keybind>
+    <keybind key="A-S-1"><action name="SendToDesktop" to="1"/></keybind>
+    <keybind key="A-S-2"><action name="SendToDesktop" to="2"/></keybind>
+    <keybind key="A-S-3"><action name="SendToDesktop" to="3"/></keybind>
+    <keybind key="A-S-4"><action name="SendToDesktop" to="4"/></keybind>
+  </keyboard>
+</openbox_config>
