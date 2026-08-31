@@ -1,0 +1,23 @@
+on:
+  push:
+    paths:
+      - 'macos/**/*.sh'
+      - 'shared/**/*.sh'
+      - '.github/workflows/test-macos.yml'
+      - 'bootstrap.sh'
+      - 'sync.sh'
+
+jobs:
+  test-macos:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: bootstrap
+        run: |
+          ln -s "$GITHUB_WORKSPACE" ~/dotfiles
+          bash bootstrap.sh
+
+      - name: sync
+        run: |
+          bash sync.sh
