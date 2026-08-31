@@ -32,7 +32,7 @@ return {
         persist_buffer_sort = true,
         separator_style = "slant",
         enforce_regular_tabs = false,
-        always_show_bufferline = true,
+        always_show_bufferline = false,
         offsets = {
           {
             filetype = "NvimTree",
