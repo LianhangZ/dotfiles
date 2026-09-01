@@ -66,6 +66,9 @@ local function apply_highlights()
   set("StatusLine", { fg = colors.fg, bg = colors.bg_dark })
   set("StatusLineNC", { fg = colors.muted, bg = colors.bg_dark })
 
+  set("InclineNormal", { fg = colors.fg, bg = colors.bg_line })
+  set("InclineNormalNC", { fg = colors.muted, bg = colors.bg_panel })
+
   set("SnacksNormal", { fg = colors.fg, bg = colors.bg_panel })
   set("SnacksBorder", { fg = colors.subtle, bg = colors.bg_panel })
   set("SnacksPicker", { fg = colors.fg, bg = colors.bg_panel })
