@@ -10,6 +10,7 @@ return {
       integrations = {
         bufferline = true,
         lualine = true,
+        nvimtree = true,
         treesitter = true,
       },
     },
