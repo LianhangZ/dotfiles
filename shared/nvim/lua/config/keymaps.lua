@@ -5,7 +5,7 @@
 vim.keymap.del("n", "<leader>bd") -- Delete Buffer
 vim.keymap.del("n", "<leader>bo") -- Delete Other Buffer
 vim.keymap.del("n", "<leader>-")  -- Split Window Below
-vim.keymap.del("n", "<leader>|")  -- Split Window Right
+-- vim.keymap.del("n", "<leader>|")  -- Split Window Right
 
 vim.keymap.set("n", "<C-w>", "<cmd>resize +1<CR>", { desc = "Increase window height" })
 vim.keymap.set("n", "<C-s>", "<cmd>resize -1<CR>", { desc = "Decrease window height" })
