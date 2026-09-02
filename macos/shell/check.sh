@@ -10,7 +10,27 @@ check_font() {
 
 check_wezterm() { command -v wezterm; }
 
-source ~/dotfiles/macos/shell/install.sh
+install_brew() {
+  NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+}
+
+install_font() { brew install --cask font-meslo-lg-nerd-font; }
+install_lazygit() { brew install lazygit; }
+install_nvim() { brew install neovim; }
+install_wezterm() { brew install --cask wezterm; }
+install_rg() { brew install ripgrep; }
+install_fd() { brew install fd; }
+
+install_aerospace() { brew install --cask nikitabobko/tap/aerospace; }
+
+install_sketchybar() {
+  brew tap FelixKratz/formulae
+  brew trust felixkratz/formulae
+  brew install sketchybar
+}
+
 source ~/dotfiles/shared/shell/check.sh
 source ~/dotfiles/shared/shell/install.sh
 
