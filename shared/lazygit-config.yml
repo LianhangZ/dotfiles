@@ -1,0 +1,10 @@
+gui:
+
+  # reduce blank in [2]Files and [3]Branches
+  shrinkSidePanelsToContent: true
+
+  sidePanels:
+    - [files, worktrees, submodules]
+    - [branches, remotes, tags]
+    - [commits, reflog]
+    - [stash]
