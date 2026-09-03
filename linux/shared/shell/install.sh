@@ -46,3 +46,7 @@ install_btop() { sudo apt install btop; }
 install_rg() { sudo apt install ripgrep; }
 
 # sudo apt install fd-find
+
+install_waybar() { sudo apt install waybar; }
+
+install_sway() { sudo apt install sway; }
