@@ -32,3 +32,4 @@ check_install rg
 
 link_nvim
 link_lazygit
+ln -sf ~/dotfiles/shared/gitconfig ~/.gitconfig
