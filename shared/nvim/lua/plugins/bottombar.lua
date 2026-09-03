@@ -8,6 +8,7 @@ return {
         muted = "#6c7086",
         blue = "#89b4fa",
         green = "#a6e3a1",
+        green_dark = "#74c27a",
         yellow = "#f9e2af",
         orange = "#fab387",
         red = "#f38ba8",
@@ -27,6 +28,34 @@ return {
         return "[LSP] " .. table.concat(names, ",")
       end
 
+      local mode_colors = {
+        n = colors.blue,
+        no = colors.blue,
+        nov = colors.blue,
+        noV = colors.blue,
+        ["no\22"] = colors.blue,
+        niI = colors.blue,
+        niR = colors.blue,
+        niV = colors.blue,
+        nt = colors.blue,
+        ntT = colors.blue,
+        v = colors.yellow,
+        V = colors.yellow,
+        ["\22"] = colors.yellow,
+        s = colors.yellow,
+        S = colors.yellow,
+        ["\19"] = colors.yellow,
+        i = colors.green_dark,
+        ic = colors.green_dark,
+        ix = colors.green_dark,
+        R = colors.red,
+        Rc = colors.red,
+        Rx = colors.red,
+        Rv = colors.red,
+        Rvc = colors.red,
+        Rvx = colors.red,
+      }
+
       opts.options = vim.tbl_deep_extend("force", opts.options or {}, {
         theme = "auto",
         globalstatus = true,
@@ -43,7 +72,9 @@ return {
           fmt = function(mode)
             return mode:sub(1, 1)
           end,
-          color = { fg = colors.bg, bg = colors.red, gui = "bold" },
+          color = function()
+            return { fg = colors.bg, bg = mode_colors[vim.fn.mode()] or colors.red, gui = "bold" }
+          end,
           padding = { left = 1, right = 1 },
         },
       }
