@@ -1,0 +1,16 @@
+[init]
+    defaultBranch = main
+
+[pull]
+    rebase = false
+
+[core]
+    editor = nvim
+    pager = cat # --no-pager
+
+[user]
+    name = Lianhang Zhang
+    email = 148300543+LianhangZ@users.noreply.github.com
+
+[includeIf "gitdir:~/test-lz1/"]
+    path = dotfiles/shared/gitconfig-test
