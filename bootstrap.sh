@@ -8,6 +8,8 @@ if [[ "$(uname -s)" == "Darwin" ]]; then
   check_install aerospace
   check_install sketchybar
   link_zsh "$HOME/dotfiles/macos/zsh"
+  ln -sf ~/dotfiles/macos/aerospace.toml ~/.aerospace.toml
+  ln -sf ~/dotfiles/macos/wezterm.lua    ~/.wezterm.lua
 elif [[ "$(uname -s)" == "Linux" ]]; then
   source /etc/os-release
 
@@ -33,3 +35,4 @@ check_install rg
 link_nvim
 link_lazygit
 ln -sf ~/dotfiles/shared/gitconfig ~/.gitconfig
+ln -sf ~/dotfiles/shared/tmux.conf ~/.tmux.conf
