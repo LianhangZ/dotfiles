@@ -1,0 +1,9 @@
+source ~/dotfiles/shared/zsh/zshenv
+
+export PATH=/opt/homebrew/bin:$PATH
+
+ICLOUD="$HOME/Library/Mobile Documents/com~apple~CloudDocs"
+OBSIDIAN="$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents"
+JUPYTER_KERNELS="$HOME/Library/Jupyter/kernels/"
+
+LIANHANGZ="$HOME/LianhangZ"

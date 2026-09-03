@@ -1,0 +1,14 @@
+source $DOTFILES/shared/zsh/zshrc
+
+alias lz='cd $LIANHANGZ'
+alias ob='cd $OBSIDIAN'
+alias pi='ssh pi'
+alias vm='ssh vm'
+alias sp='aerospace list-windows --all --format "%{workspace} | %{app-name} | %{window-title}"'
+
+# clone() {
+#     git clone "git@github-main"
+# }
+
+# alias ghl='gh repo list --limit 100 --json nameWithOwner,description,visibility,updatedAt --jq ".[] | [.nameWithOwner, (.description // \"-\"), .visibility, .updatedAt] | @tsv" | column -t -s $'\''\t'\'''
+alias ghl='gh repo list --limit 100 --json name,visibility --jq ".[] | [.name,.visibility] | @tsv" | column -t'
