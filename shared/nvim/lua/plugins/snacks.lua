@@ -74,7 +74,7 @@ return {
 ██████╔╝╚██████╔╝   ██║   ███████║
 ╚═════╝  ╚═════╝    ╚═╝   ╚══════╝]],
         keys = {
-          -- TODO { icon = " ", key = "p", desc = "Project", action = "" },
+          { icon = "󰙅 ", key = "p", desc = "Project", action = ":lua Snacks.picker.projects()" },
           { icon = " ", key = "f", desc = "Find File", action = ":lua Snacks.dashboard.pick('files')" },
           { icon = " ", key = "g", desc = "Grep", action = ":lua Snacks.dashboard.pick('live_grep')" },
           { icon = " ", key = "r", desc = "Recent Files", action = ":lua Snacks.dashboard.pick('oldfiles')" },
