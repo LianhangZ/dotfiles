@@ -20,6 +20,46 @@ local function delete_dir_buffer(dir)
   end
 end
 
+local PROJECT_ROOTS = {
+  "~/LianhangZ",
+  "~/Library/Mobile Documents/iCloud~md~obsidian/Documents",
+}
+
+local function compact_project_path(path)
+  path = normalize_dir(path)
+  if not path then
+    return nil
+  end
+
+  for _, root in ipairs(PROJECT_ROOTS) do
+    local normalized_root = normalize_dir(root)
+    if normalized_root and (path == normalized_root or path:find(normalized_root .. "/", 1, true) == 1) then
+      local label = vim.fn.fnamemodify(normalized_root, ":t")
+      local rest = path:sub(#normalized_root + 2)
+      return rest == "" and ("⋮" .. label) or ("⋮" .. label .. "/" .. rest)
+    end
+  end
+
+  return vim.fn.fnamemodify(path, ":~")
+end
+
+local function format_project(item, picker)
+  if not item.file then
+    return {}
+  end
+
+  local icon, hl = Snacks.util.icon(item.file, "directory", {
+    fallback = picker.opts.icons.files,
+  })
+  icon = Snacks.picker.util.align(icon, picker.opts.formatters.file.icon_width or 2)
+
+  return {
+    { icon, hl, virtual = true },
+    { compact_project_path(item.file) or item.file, "SnacksPickerDirectory", field = "file" },
+    { " " },
+  }
+end
+
 return {
   {
     "nvim-telescope/telescope.nvim",
@@ -88,6 +128,7 @@ return {
             layout = {
               preset = "default",
             },
+            format = format_project,
             confirm = function(picker, item)
               picker:close()
               if not item or not item.file then
@@ -103,11 +144,8 @@ return {
               delete_dir_buffer(dir)
               Snacks.picker.files({ cwd = dir })
             end,
-            dev = {
-              "~/LianhangZ",
-              "~/Library/Mobile Documents/iCloud~md~obsidian/Documents",
-            },
-            recent = false, -- project directories of recent file
+            dev = PROJECT_ROOTS,
+            -- recent = false, -- project directories of recent file
             patterns = {
               ".git",
               "Makefile",
