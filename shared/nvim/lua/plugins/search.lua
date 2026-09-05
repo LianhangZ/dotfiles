@@ -107,6 +107,7 @@ return {
               "~/LianhangZ",
               "~/Library/Mobile Documents/iCloud~md~obsidian/Documents",
             },
+            recent = false, -- project directories of recent file
             patterns = {
               ".git",
               "Makefile",
