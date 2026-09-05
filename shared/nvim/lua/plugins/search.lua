@@ -148,8 +148,6 @@ return {
             -- recent = false, -- project directories of recent file
             patterns = {
               ".git",
-              "Makefile",
-              "CMakeLists.txt",
               "README.md",
             },
           },
