@@ -15,6 +15,7 @@ app_icon() {
     "Google Chrome") printf "󰊯" ;;
     "iTerm2"|"Terminal"|"WezTerm") printf "󰆍" ;;
     "Mail"|"Microsoft Outlook") printf "󰇮" ;;
+    "Maps") printf "" ;;
     "Microsoft Excel") printf "󱎏" ;;
     "Microsoft PowerPoint") printf "󱎐" ;;
     "Microsoft Teams") printf "󰊻" ;;
