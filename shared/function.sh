@@ -140,7 +140,7 @@ check_aerospace() { command -v aerospace; }
 
 install_sketchybar() {
   brew tap FelixKratz/formulae
-  brew trust felixkratz/formulae
+  brew trust --formula felixkratz/formulae/sketchybar
   brew install sketchybar
 }
 
