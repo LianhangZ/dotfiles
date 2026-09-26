@@ -23,6 +23,7 @@ app_icon() {
     "Messages") printf "󰍡" ;;
     "Music") printf "󰝚" ;;
     "Notion") printf "" ;;
+    "Numbers") printf "󰓫";;
     "Obsidian") printf "󰠮" ;;
     "Parallels Desktop") printf "󰟀" ;;
     "Photos") printf "" ;;
