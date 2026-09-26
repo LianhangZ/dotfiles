@@ -58,8 +58,7 @@ return {
     { "<leader>bd", false },  -- Delete Buffer
     { "<leader>bo", false },  -- Delete Other Buffer
     { "<leader>e", false },
-    { "<leader>d", function() Snacks.bufdelete() end,
-      desc = " Delete Buffer"},
+    -- { "<leader>d", function() Snacks.bufdelete() end, desc = " Delete Buffer"},
   },
   opts = function(_, opts)
     opts.dashboard = vim.tbl_deep_extend("force", opts.dashboard or {}, {
