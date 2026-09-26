@@ -40,6 +40,7 @@ local keymaps = {
   [" rh"] = true,   -- reset hunk
   [" rb"] = true,   -- reset buffer
   -- [" rn"] = true,   -- rename
+  [" s"] = true,   -- Session
   [" -"] = true,    -- Split Window Below
   [" |"] = true,    -- Split Window Right
   ["gcc"] = true,   -- comment
