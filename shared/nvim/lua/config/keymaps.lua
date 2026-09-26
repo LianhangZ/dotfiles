@@ -11,3 +11,5 @@ vim.keymap.set("n", "<C-w>", "<cmd>resize +1<CR>", { desc = "Increase window hei
 vim.keymap.set("n", "<C-s>", "<cmd>resize -1<CR>", { desc = "Decrease window height" })
 vim.keymap.set("n", "<C-d>", "<cmd>vertical resize -1<CR>", { desc = "Decrease window width" })
 vim.keymap.set("n", "<C-a>", "<cmd>vertical resize +1<CR>", { desc = "Increase window width" })
+
+vim.keymap.set("n", "<leader>d", "<cmd>BufferLinePickClose<cr>", { desc = " Pick Buffer to Delete",})
