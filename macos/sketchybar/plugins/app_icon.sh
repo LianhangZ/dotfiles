@@ -14,6 +14,7 @@ app_icon() {
     "Firefox") printf "󰈹" ;;
     "Google Chrome") printf "󰊯" ;;
     "iTerm2"|"Terminal"|"WezTerm") printf "󰆍" ;;
+    "JupyterLab") printf "" ;;
     "Mail"|"Microsoft Outlook") printf "󰇮" ;;
     "Maps") printf "" ;;
     "Microsoft Excel") printf "󱎏" ;;
@@ -28,6 +29,7 @@ app_icon() {
     "Parallels Desktop") printf "󰟀" ;;
     "Photos") printf "" ;;
     "Preview") printf "" ;;
+    "PyCharm") printf "" ;;
     "Reminders") printf "" ;;
     "Safari") printf "󰀹" ;;
     "Spotify") printf "󰓇" ;;
